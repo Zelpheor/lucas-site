@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Psicólogo — Psicoterapia Online</title> <!--Título do Site-->
+  <meta name="description"
+    content="Psicoterapia online com Lucas, psicólogo. Atendimento para brasileiros no Brasil e no exterior, empresas, palestras e consultoria.">
+
+  <link rel="icon" href="img/Icon_psico.png" type="image/png"><!--Icone do Site-->
+
+  <!--Fontes: Cormorant Garamond (títulos) e Montserrat (textos)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!--Ícones-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css"> <!--Link da estilização-->
+  <script defer src="js/main.js"></script> <!--Link do Script-->
+</head>
+
+<body>
+
+  <a class="pular-conteudo" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <!--Linha gráfica contínua: elemento de identidade visual que acompanha o scroll,
+      conectando visualmente todas as seções do início ao fim da página-->
+  <div class="linha-continua" aria-hidden="true">
+    <div class="linha-continua__trilho">
+      <div class="linha-continua__progresso" id="linhaProgresso"></div>
+    </div>
+  </div>
+  <div class="progresso-mobile" aria-hidden="true">
+    <div class="progresso-mobile__barra" id="progressoMobile"></div>
+  </div>
+
+  <!--Cabeçalho / topo do site-->
+  <header class="topo-site" id="topoSite">
+    <div class="topo-site__container">
+      <a class="logo" href="#inicio">
+        <span class="logo__nome">Lucas Hansen</span>
+        <span class="logo__cargo"><span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border:1.5px solid currentColor;border-radius:50%;font-family:Georgia,serif;font-size:12px;line-height:1;margin-right:5px;position:relative;top:-1px;"><span style="transform:translatex(.5px)">Ψ</span></span>Psicólogo · CRP 06/237362</span>
+      </a>
+
+      <nav class="menu-principal" id="menuPrincipal">
+        <a href="#inicio">Início</a>
+        <a href="#psicoterapia">Psicoterapia</a>
+        <a href="#outros-servicos">Outros Serviços</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="topo-site__acoes">
+        <a class="botao botao--primario botao--desktop" href="#contato">
+          Agendar consulta <i class="fa-solid fa-comment" style="color: rgb(255, 255, 255);"></i>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"
+          aria-controls="menuPrincipal">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+
+    <!--1. INÍCIO-->
+    <section class="secao secao--hero" id="inicio">
+      <div class="secao__container hero__grid">
+        <div class="hero__texto">
+          <p class="eyebrow">Psicoterapia online</p>
+          <h1>Cuidar da sua mente, de onde você estiver.</h1>
+          <p class="hero__descricao">
+            Sou Lucas, psicólogo focado em psicoterapia para adultos, e atendo exclusivamente online. <br>
+            Ofereço um espaço seguro para que você possa compreender escolhas e caminhos com mais sentido. <br>
+            Um espaço que acompanha você onde estiver: respeitando sua história, rotina e o seu tempo em qualquer lugar do Brasil e também brasileiros que vivem no exterior.
+          </p>
+
+          <ul class="hero__badges">
+            <li><i class="fa-solid fa-lock"></i></i> Sigilo e privacidade garantidos</li>
+            <li><i class="fa-solid fa-users"></i> Atendimento exclusivo para adultos</li>
+            <li><i class="fa-solid fa-clock"></i> Sessões Semanais de 50 minutos</li>
+            <li><i class="fa-solid fa-calendar-days"></i>Horário e dia fixo</li>
+            <li><i class="fa-solid fa-seedling"></i> Psicologia Existencial e Busca de Sentido</li>
+
+          </ul>
+
+          <div class="hero__cta">
+            <a class="botao botao--primario botao--grande" href="#contato">
+              Agendar consulta <i class="fa-solid fa-comment" style="color: rgb(255, 255, 255);"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__foto">
+                  <img src="img/Foto_inicio.jpg" alt="Minha foto inicio" class="Arredondar">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Como funciona o atendimento online-->
+    <section class="secao secao--alt" id="atendimento-online">
+      <div class="secao__container como-funciona__grid">
+        <div class="como-funciona__foto">
+          <div class="foto foto--paisagem">
+            <img src="img/Foto_meio.jpg" class="Arredondar">
+          </div>
+        </div>
+
+        <div class="como-funciona__texto">
+          <p class="eyebrow">Como funciona</p>
+          <h2>O atendimento on-line, passo a passo</h2>
+          <ul class="lista-check">
+            <li><i class="fa-solid fa-shield-halved"></i> Realizado em plataforma segura, reconhecida pelo Conselho
+              Federal de Psicologia do Brasil.</li>
+            <li><i class="fa-solid fa-lock"></i> Ambiente privativo e reservado: A sessão exige um local tranquilo e individual para garantir o sigilo e a qualidade do atendimento.</li>
+            <li><i class="fa-solid fa-clock"></i> Pontualidade e ritmo: Encontros semanais de 50 minutos, em horário reservado exclusivamente para você na agenda.</li>
+            <li><i class="fa-solid fa-house-flag"></i>Sem deslocamentos: Praticidade de realizar suas sessões no conforto de casa ou onde estiver, economizando tempo no dia a dia.</li>
+            <li><i class="fa-solid fa-plane"></i>Continuidade no cuidado: Mobilidade para manter seu processo terapêutico ativo, mesmo em viagens ou mudanças de rotina.</li>
+          </ul>
+          <a class="botao botao--primario" href="#contato">
+            Agendar consulta <i class="fa-solid fa-comment" style="color: rgb(255, 255, 255);"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--2. SERVIÇOS — PSICOTERAPIA-->
+    <section class="secao" id="psicoterapia">
+      <div class="secao__container">
+        <h2>Psicoterapia individual</h2>
+        <p class="secao__intro">
+          Um acompanhamento focado na sua experiência única de mundo. <br>
+Através de um diálogo autêntico e sem julgamentos, olhamos para as suas questões, suas emoções e suas escolhas, criando um espaço seguro para você se reconectar consigo mesmo (a)  e com o que é essencial para você.
+        </p>
+
+        <div class="grid-info">
+          <div class="card-info">
+            <i class="fa-solid fa-user"></i>
+            <h3>Atendimento individual</h3>
+            <p>Sessões pensadas para as necessidades e o momento de vida de cada pessoa.</p>
+          </div>
+          <div class="card-info">
+            <i class="fa-solid fa-video"></i>
+            <h3>Exclusivamente online</h3>
+            <p>Processo simplificado: voce envia mensagem, agendamos horário e realizamos o primeiro atendimento</p>
+          </div>
+          <div class="card-info">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Duração e frequência</h3>
+            <p>Sessões semanais de 50 minutos, em dia e horário fixos reservados para você.</p>
+          </div>
+          <div class="card-info">
+            <i class="fa-solid fa-lock"></i>
+            <h3>Ambiente reservado</h3>
+            <p>O atendimento requer um local privativo, tranquilo e livre de interferências para garantir sigilo e segurança.</p>
+          </div>
+          <div class="card-info">
+            <i class="fa-solid fa-shirt"></i>
+            <h3> Enquadre e vestimenta</h3>
+            <p>Participação em espaço adequado e com vestimenta apropriada ao contexto profissional.</p>
+          </div>
+          <div class="card-info">
+            <i class="fa-solid fa-hourglass"></i>
+            <h3>Pontualidade e tolerância</h3>
+            <p>Há um alinhamento de 10 minutos de atraso, mantendo o horário final, preservando o atendimento e a rotina do profissional.</p>
+          </div>
+        </div>
+
+        <a class="botao botao--primario" href="#contato">
+          Agendar consulta <i class="fa-solid fa-comment" style="color: rgb(255, 255, 255);"></i>
+        </a>
+      </div>
+    </section>
+
+    <!--3. OUTROS SERVIÇOS-->
+    <section class="secao secao--alt" id="outros-servicos">
+      <div class="secao__container">
+        <p class="eyebrow">Além da psicoterapia</p>
+        <h2>Outros serviços</h2>
+        <p class="secao__intro">
+          Um trabalho que também acontece fora do consultório: em empresas, equipes e para outros profissionais da
+          saúde.
+        </p>
+          <div class="grid-cards">
+          <article class="card-servico">
+            <div class="card-servico__icone"><i class="fa-solid fa-building"></i></div>
+            <h3>Psicoterapia em empresas</h3>
+            <p>Cuidado psicológico voltado a colaboradores e equipes, contribuindo para a saúde mental dentro do
+              contexto corporativo.</p>
+            <a class="link-saiba-mais" href="#contato">Saiba mais <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="card-servico">
+            <div class="card-servico__icone"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <h3>Palestras</h3>
+            <p>Palestras sobre saúde mental para empresas, escolas e eventos, com temas e formatos sob consulta.
+              <!--[listar temas de palestra disponíveis]--></p>
+            <a class="link-saiba-mais" href="#contato">Saiba mais <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="card-servico">
+            <div class="card-servico__icone"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Clínica em Dia / Pulso Financeiro</h3>
+            <p>Gestão e análise financeira para profissionais da saúde, com dashboards em Power BI para acompanhar
+              a saúde do consultório.</p>
+            <a class="link-saiba-mais" href="#contato">Saiba mais <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--4. DÚVIDAS FREQUENTES-->
+    <section class="secao" id="duvidas">
+      <div class="secao__container secao__container--estreito">
+        <h2>Dúvidas frequentes</h2>
+
+        <div class="accordion" id="accordionFaq">
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__pergunta" aria-expanded="false">
+                Como funciona o primeiro atendimento?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion__resposta">
+              <p>É um espaço de escuta inicial para entender sua demanda, apresentar a abordagem e alinhar o funcionamento do acompanhamento.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__pergunta" aria-expanded="false">
+                A psicoterapia online é indicada pra mim?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion__resposta">
+              <p>Sim, para adultos que buscam acolhimento, compreensão de questões pessoais, possuem um local privativo e conexão estável.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__pergunta" aria-expanded="false">
+                Quais são os períodos de atendimento?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion__resposta">
+              <p>De segunda a sexta-feira, (das 07h00 às 20h00) em horários fixos alinhados previamente conforme a disponibilidade da agenda - Caso tenha demandas de fuso horário, é alinhado em sessão também a disponibilidade. </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__pergunta" aria-expanded="false">
+                Qual a duração da sessão e período de acompanhamento terapêutico?  
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion__resposta">
+              <p>A duração das sessões são de 50 minutos, podendo haver variação do tempo, sendo semanais ou mais espaçadas, alinhadas as demandas do paciente.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__pergunta" aria-expanded="false">
+                Qual o valor da sessão?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion__resposta">
+              <p>O valor pode variar com a expertise do profissional, considerando habilidades, experiências e formações. <br>
+De acordo com o Código de Ética do CFP, valores não são divulgados publicamente, 
+fico à disposição para esclarecer essa dúvida diretamente em nossos canais de contato!</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__pergunta" aria-expanded="false">
+                Preciso de encaminhamento médico?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion__resposta">
+              <p>Não, você pode iniciar o processo terapêutico por iniciativa própria quando sentir necessidade.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__pergunta" aria-expanded="false">
+                 Atende por plano de saúde?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion__resposta">
+              <p>Trabalho com atendimento particular, ou seja, a partir do recibo que realizo após a sessão, caso você tenha plano de saúde, você consegue solicitar com o comprovante emitido o reembolso parcial da sessão, que pode ter variações por plano e empresa contratada. </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--5. CVV — seção discreta, fora do rodapé-->
+    <section class="secao secao--cvv" id="cvv" aria-labelledby="cvv-titulo">
+      <div class="secao__container secao__container--estreito cvv__caixa">
+        <i class="fa-solid fa-heart-circle-check cvv__icone" aria-hidden="true"></i>
+        <div>
+          <h2 id="cvv-titulo"><strong>Se seu sofrimento estiver intenso demais para atravessar esse momento sozinho(a), busque apoio.</strong></h2>
+          <p>
+            O <strong>CVV — Centro de Valorização da Vida</strong> oferece apoio emocional gratuito e sigiloso, 24 horas por dia, todos os dias.
+          </p>
+          <div class="cvv__contatos">
+            <a href="tel:188"><i class="fa-solid fa-phone"></i> Ligue 188</a>
+          <p>
+            Em situações de risco imediato à vida, procure um serviço de emergência ou ligue 192 (SAMU).
+          </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--6. CONTATO-->
+    <section class="secao secao--contato" id="contato">
+      <div class="secao__container">
+        <p class="eyebrow eyebrow--claro">Contato</p>
+        <h2>Vamos agendar uma primeira conversa? </h2>
+        <p class="secao__intro secao__intro--claro">
+          Fale comigo e combinamos o melhor dia e horário para sua primeira sessão.
+        </p>
+
+        <a class="botao botao--whatsapp botao--grande" href="https://wa.me/+5511987008851" target="_blank"
+          rel="noopener noreferrer">
+          <i class="fa-solid fa-comment" style="color: rgb(255, 255, 255);"></i> Fale Comigo Agora
+        </a>
+
+        <div class="contato__grid">
+          <a class="contato__card" href="https://wa.me/+5511987008851" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-comment" style="color: rgb(255, 255, 255);"></i>
+            <span>WhatsApp</span>
+          </a>
+          <a class="contato__card" href="https://www.instagram.com/psicologohansen/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-camera"></i>
+            <span>Instagram</span>
+          </a>
+          <a class="contato__card" href="mailto:lucashansen.psicologo@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            <span>E-mail</span>
+          </a>
+        </div>
+
+        <p class="contato__horario">
+          <i class="fa-regular fa-clock"></i> Segunda a sexta-feira, das 08h às 19h (Horario de Brasilia).
+        </p>
+        <p class="contato__horario">
+          <i class="fa-regular fa-clock"></i> Para atendimentos com alterações de fuso-horario, alinhamento previo de acordo com a necessidade do paciente.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!--Rodapé-->
+  <footer class="rodape">
+    <div class="rodape__container">
+      <div class="rodape__marca">
+        <span class="logo__nome logo__nome--rodape">Lucas Hansen</span>
+        <span class="logo__cargo"><span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border:1.5px solid currentColor;border-radius:50%;font-family:Georgia,serif;font-size:12px;line-height:1;margin-right:5px;position:relative;top:-1px;"><span style="transform:translatex(.5px);">Ψ</span></span>Psicólogo · CRP 06/237362 </span> <span style="color: rgb(255, 255, 255)"></span>
+        <!--[incluir número de registro no CRP]-->
+      </div>
+
+      <nav class="rodape__links">
+        <a href="#inicio">Início</a>
+        <a href="#psicoterapia">Psicoterapia</a>
+        <a href="#outros-servicos">Outros Serviços</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="rodape__social">
+        <a href="https://wa.me/+5511987008851" target="_blank" rel="noopener noreferrer">WhatsApp: (11) 98700-8851</a>
+        <a href="https://www.instagram.com/psicologohansen/" target="_blank" rel="noopener noreferrer">Instagram: @psicologohansen</a>
+        </a>
+        <a href="mailto:lucashansen.psicologo@gmail.com">E-mail: lucashansen.psicologo@gmail.com</a>
+        </a>
+      </div>
+    </div>
+    <p class="rodape__copy">© <span id="anoAtual"></span> Lucas Hansen Psicólogo. Todos os direitos reservados.</p>
+  </footer>
+
+  <!--Botão flutuante do WhatsApp-->
+  <a class="whatsapp-flutuante" href="https://wa.me/+5511987008851" target="_blank" rel="noopener noreferrer"
+    aria-label="Falar no WhatsApp">
+    <i class="fa-solid fa-comment" style="color: rgb(255, 255, 255);"></i>
+  </a>
+
+</body>
+
+</html>
