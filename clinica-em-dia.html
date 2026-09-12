@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica em Dia | Pulso Financeiro — Lucas Hansen Psicólogo</title>
+  <meta name="description" content="Gestão financeira para profissionais da saúde, com dashboards para acompanhar receitas, resultados e indicadores do consultório.">
+
+  <link rel="icon" href="img/Icon_psico.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+  <a class="pular-conteudo" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <div class="linha-continua" aria-hidden="true">
+    <div class="linha-continua__trilho">
+      <div class="linha-continua__progresso" id="linhaProgresso"></div>
+    </div>
+  </div>
+  <div class="progresso-mobile" aria-hidden="true">
+    <div class="progresso-mobile__barra" id="progressoMobile"></div>
+  </div>
+
+  <!--Cabeçalho / topo do site-->
+  <header class="topo-site" id="topoSite">
+    <div class="topo-site__container">
+      <a class="logo" href="index.html">
+        <span class="logo__nome">Lucas Hansen</span>
+        <span class="logo__cargo"><span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border:1.5px solid currentColor;border-radius:50%;font-family:Georgia,serif;font-size:12px;line-height:1;margin-right:5px;position:relative;top:-1px;"><span style="transform:translatex(.5px)">Ψ</span></span>Psicólogo · CRP 06/237362</span>
+      </a>
+
+      <nav class="menu-principal" id="menuPrincipal">
+        <a href="index.html#inicio">Início</a>
+        <a href="index.html#psicoterapia">Psicoterapia</a>
+        <a href="index.html#outros-servicos">Outros Serviços</a>
+        <a href="index.html#duvidas">Dúvidas</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+
+      <div class="topo-site__acoes">
+        <a class="botao botao--primario botao--desktop" href="index.html#contato">
+          Agendar consulta <i class="fa-solid fa-comment" style="color: rgb(255, 255, 255);"></i>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"
+          aria-controls="menuPrincipal">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <nav class="subnav-servicos" aria-label="Outros serviços">
+    <div class="subnav-servicos__container">
+      <a href="saude-mental-empresas.html">Saúde mental nas empresas</a>
+      <a href="palestras-encontros.html">Palestras e Encontros</a>
+      <a href="clinica-em-dia.html" class="ativo">Clínica em Dia</a>
+    </div>
+  </nav>
+
+  <main id="conteudo-principal">
+
+    <section class="secao secao--alt">
+      <div class="secao__container secao__container--estreito">
+        <a class="voltar-link" href="index.html#outros-servicos"><i class="fa-solid fa-arrow-left"></i> Outros Serviços</a>
+        <p class="eyebrow">Outros Serviços</p>
+        <h1>Clínica em Dia | Pulso Financeiro</h1>
+        <p class="secao__intro">Transforme os números da sua clínica em informação para decidir melhor.</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="secao__container secao__container--estreito artigo">
+        <p>Administrar uma clínica ou consultório também significa acompanhar números — mas nem sempre é fácil
+          transformar receitas, despesas e movimentações financeiras em uma visão clara do negócio.</p>
+        <p>O Clínica em Dia foi pensado para profissionais da saúde que desejam acompanhar a saúde financeira de
+          sua clínica de maneira mais organizada, visual e estratégica.</p>
+        <p>Por meio de dashboards, os principais dados financeiros são organizados para facilitar a leitura dos
+          resultados e apoiar decisões sobre o negócio.</p>
+
+        <h2>O que você consegue acompanhar?</h2>
+        <p>A solução pode reunir e organizar informações como:</p>
+        <ul class="lista-check">
+          <li><i class="fa-solid fa-check"></i> Receitas e faturamento.</li>
+          <li><i class="fa-solid fa-check"></i> Despesas fixas e variáveis.</li>
+          <li><i class="fa-solid fa-check"></i> Ticket médio.</li>
+          <li><i class="fa-solid fa-check"></i> Fluxo financeiro.</li>
+          <li><i class="fa-solid fa-check"></i> Dados demográficos e faixa etária de quem realiza os atendimentos.</li>
+          <li><i class="fa-solid fa-check"></i> Resultado da clínica.</li>
+          <li><i class="fa-solid fa-check"></i> Evolução das receitas ao longo do tempo.</li>
+          <li><i class="fa-solid fa-check"></i> Comparação entre períodos.</li>
+          <li><i class="fa-solid fa-check"></i> Principais categorias de despesas.</li>
+          <li><i class="fa-solid fa-check"></i> Indicadores financeiros.</li>
+          <li><i class="fa-solid fa-check"></i> Acompanhamento de metas.</li>
+          <li><i class="fa-solid fa-check"></i> Outros indicadores relevantes para a realidade da clínica.</li>
+        </ul>
+        <p>A estrutura pode ser adaptada conforme o modelo de funcionamento e as necessidades de cada profissional.</p>
+      </div>
+    </section>
+
+    <section class="secao secao--alt">
+      <div class="secao__container secao__container--estreito artigo-cta">
+        <h2>Vamos conversar sobre isso?</h2>
+        <a class="botao botao--primario botao--grande" href="index.html#contato">
+          Solicitar mais informações <i class="fa-solid fa-comment" style="color: rgb(255, 255, 255);"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!--Rodapé-->
+  <footer class="rodape">
+    <div class="rodape__container">
+      <div class="rodape__marca">
+        <span class="logo__nome logo__nome--rodape">Lucas Hansen</span>
+        <span class="logo__cargo"><span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border:1.5px solid currentColor;border-radius:50%;font-family:Georgia,serif;font-size:12px;line-height:1;margin-right:5px;position:relative;top:-1px;"><span style="transform:translatex(.5px);">Ψ</span></span>Psicólogo · CRP 06/237362 </span> <span style="color: rgb(255, 255, 255)"></span>
+        <!--[incluir número de registro no CRP]-->
+      </div>
+
+      <nav class="rodape__links">
+        <a href="index.html#inicio">Início</a>
+        <a href="index.html#psicoterapia">Psicoterapia</a>
+        <a href="index.html#outros-servicos">Outros Serviços</a>
+        <a href="index.html#duvidas">Dúvidas</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+
+      <div class="rodape__social">
+        <a href="https://wa.me/+5511987008851" target="_blank" rel="noopener noreferrer">WhatsApp: (11) 98700-8851</a>
+        <a href="https://www.instagram.com/psicologohansen/" target="_blank" rel="noopener noreferrer">Instagram: @psicologohansen</a>
+        <a href="mailto:lucashansen.psicologo@gmail.com">E-mail: lucashansen.psicologo@gmail.com</a>
+      </div>
+    </div>
+    <p class="rodape__copy">© <span id="anoAtual"></span> Lucas Hansen Psicólogo. Todos os direitos reservados.</p>
+  </footer>
+
+  <!--Botão flutuante do WhatsApp-->
+  <a class="whatsapp-flutuante" href="https://wa.me/+5511987008851" target="_blank" rel="noopener noreferrer"
+    aria-label="Falar no WhatsApp">
+    <i class="fa-solid fa-comment" style="color: rgb(255, 255, 255);"></i>
+  </a>
+
+</body>
+
+</html>

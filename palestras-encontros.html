@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palestras e Encontros — Lucas Hansen Psicólogo</title>
+  <meta name="description" content="Palestras e encontros sobre saúde mental, relações de trabalho e desenvolvimento humano.">
+
+  <link rel="icon" href="img/Icon_psico.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+  <a class="pular-conteudo" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <div class="linha-continua" aria-hidden="true">
+    <div class="linha-continua__trilho">
+      <div class="linha-continua__progresso" id="linhaProgresso"></div>
+    </div>
+  </div>
+  <div class="progresso-mobile" aria-hidden="true">
+    <div class="progresso-mobile__barra" id="progressoMobile"></div>
+  </div>
+
+  <!--Cabeçalho / topo do site-->
+  <header class="topo-site" id="topoSite">
+    <div class="topo-site__container">
+      <a class="logo" href="index.html">
+        <span class="logo__nome">Lucas Hansen</span>
+        <span class="logo__cargo"><span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border:1.5px solid currentColor;border-radius:50%;font-family:Georgia,serif;font-size:12px;line-height:1;margin-right:5px;position:relative;top:-1px;"><span style="transform:translatex(.5px)">Ψ</span></span>Psicólogo · CRP 06/237362</span>
+      </a>
+
+      <nav class="menu-principal" id="menuPrincipal">
+        <a href="index.html#inicio">Início</a>
+        <a href="index.html#psicoterapia">Psicoterapia</a>
+        <a href="index.html#outros-servicos">Outros Serviços</a>
+        <a href="index.html#duvidas">Dúvidas</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+
+      <div class="topo-site__acoes">
+        <a class="botao botao--primario botao--desktop" href="index.html#contato">
+          Agendar consulta <i class="fa-solid fa-comment" style="color: rgb(255, 255, 255);"></i>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"
+          aria-controls="menuPrincipal">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <nav class="subnav-servicos" aria-label="Outros serviços">
+    <div class="subnav-servicos__container">
+      <a href="saude-mental-empresas.html">Saúde mental nas empresas</a>
+      <a href="palestras-encontros.html" class="ativo">Palestras e Encontros</a>
+      <a href="clinica-em-dia.html">Clínica em Dia</a>
+    </div>
+  </nav>
+
+  <main id="conteudo-principal">
+
+    <section class="secao secao--alt">
+      <div class="secao__container secao__container--estreito">
+        <a class="voltar-link" href="index.html#outros-servicos"><i class="fa-solid fa-arrow-left"></i> Outros Serviços</a>
+        <p class="eyebrow">Outros Serviços</p>
+        <h1>Palestras e encontros</h1>
+        <p class="secao__intro">Conversas que aproximam Psicologia, trabalho e experiência humana.</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="secao__container secao__container--estreito artigo">
+        <p>Uma palestra sobre saúde mental não precisa ser apenas uma lista de dicas sobre como "cuidar da mente".</p>
+        <p>Os encontros que proponho partem de uma perspectiva psicológica e contextual, buscando relacionar aquilo
+          que sentimos com as relações, o trabalho, as escolhas e os ambientes em que estamos inseridos.</p>
+
+        <h2>Temas possíveis</h2>
+      </div>
+
+      <div class="secao__container">
+        <div class="grid-info">
+          <div class="card-info">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>Saúde mental e trabalho</h3>
+            <p>Como o contexto profissional atravessa nossa experiência psicológica.</p>
+          </div>
+          <div class="card-info">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h3>Quando o problema não está só em você</h3>
+            <p>Uma reflexão sobre sofrimento, contexto e responsabilidade.</p>
+          </div>
+          <div class="card-info">
+            <i class="fa-solid fa-people-group"></i>
+            <h3>Liderança e relações humanas</h3>
+            <p>O impacto das relações de trabalho sobre pessoas e equipes.</p>
+          </div>
+          <div class="card-info">
+            <i class="fa-solid fa-hourglass-half"></i>
+            <h3>Limites, disponibilidade e trabalho</h3>
+            <p>Quando estar sempre disponível começa a cobrar um preço.</p>
+          </div>
+          <div class="card-info">
+            <i class="fa-solid fa-compass"></i>
+            <h3>Sentido no trabalho</h3>
+            <p>A relação entre trabalho, valores, escolhas e construção de sentido.</p>
+          </div>
+          <div class="card-info">
+            <i class="fa-solid fa-arrows-rotate"></i>
+            <h3>Mudanças e transições profissionais</h3>
+            <p>Como lidar psicologicamente com períodos de transformação.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="secao__container secao__container--estreito artigo">
+        <h2>Formatos</h2>
+        <p>As propostas podem ser adaptadas para:</p>
+        <ul class="lista-check">
+          <li><i class="fa-solid fa-check"></i> Empresas.</li>
+          <li><i class="fa-solid fa-check"></i> Equipes.</li>
+          <li><i class="fa-solid fa-check"></i> Programas internos.</li>
+          <li><i class="fa-solid fa-check"></i> Semanas temáticas.</li>
+          <li><i class="fa-solid fa-check"></i> Eventos.</li>
+          <li><i class="fa-solid fa-check"></i> Instituições de ensino.</li>
+          <li><i class="fa-solid fa-check"></i> Encontros profissionais.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao secao--alt">
+      <div class="secao__container secao__container--estreito artigo-cta">
+        <h2>Vamos conversar sobre isso?</h2>
+        <a class="botao botao--primario botao--grande" href="index.html#contato">
+          Solicitar uma proposta <i class="fa-solid fa-comment" style="color: rgb(255, 255, 255);"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!--Rodapé-->
+  <footer class="rodape">
+    <div class="rodape__container">
+      <div class="rodape__marca">
+        <span class="logo__nome logo__nome--rodape">Lucas Hansen</span>
+        <span class="logo__cargo"><span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border:1.5px solid currentColor;border-radius:50%;font-family:Georgia,serif;font-size:12px;line-height:1;margin-right:5px;position:relative;top:-1px;"><span style="transform:translatex(.5px);">Ψ</span></span>Psicólogo · CRP 06/237362 </span> <span style="color: rgb(255, 255, 255)"></span>
+      </div>
+
+      <nav class="rodape__links">
+        <a href="index.html#inicio">Início</a>
+        <a href="index.html#psicoterapia">Psicoterapia</a>
+        <a href="index.html#outros-servicos">Outros Serviços</a>
+        <a href="index.html#duvidas">Dúvidas</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+
+      <div class="rodape__social">
+        <a href="https://wa.me/+5511987008851" target="_blank" rel="noopener noreferrer">WhatsApp: (11) 98700-8851</a>
+        <a href="https://www.instagram.com/psicologohansen/" target="_blank" rel="noopener noreferrer">Instagram: @psicologohansen</a>
+        <a href="mailto:lucashansen.psicologo@gmail.com">E-mail: lucashansen.psicologo@gmail.com</a>
+      </div>
+    </div>
+    <p class="rodape__copy">© <span id="anoAtual"></span> Lucas Hansen Psicólogo. Todos os direitos reservados.</p>
+  </footer>
+
+  <!--Botão flutuante do WhatsApp-->
+  <a class="whatsapp-flutuante" href="https://wa.me/+5511987008851" target="_blank" rel="noopener noreferrer"
+    aria-label="Falar no WhatsApp">
+    <i class="fa-solid fa-comment" style="color: rgb(255, 255, 255);"></i>
+  </a>
+
+</body>
+
+</html>

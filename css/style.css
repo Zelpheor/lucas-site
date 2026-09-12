@@ -647,6 +647,7 @@ section[id] {
   display: flex;
   align-items: flex-start;
   gap: 24px;
+  padding-bottom: 0px;
 }
 
 .cvv__icone {
@@ -836,4 +837,85 @@ section[id] {
 
 @media (prefers-reduced-motion: reduce) {
   .whatsapp-flutuante { animation: none; }
+}
+
+/* ==========================================================================
+   Páginas internas de serviço (Saúde Mental nas Empresas, Palestras, Clínica em Dia)
+   ========================================================================== */
+.voltar-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--marrom-claro);
+  margin-bottom: 20px;
+  transition: color var(--transicao);
+}
+
+.voltar-link:hover {
+  color: var(--marrom-cafe);
+}
+
+.artigo h2 {
+  margin-top: 1.6em;
+}
+
+.artigo-cta {
+  text-align: center;
+}
+
+.artigo-cta h2 {
+  margin-bottom: 0.8em;
+}
+
+/* ==========================================================================
+   Sub-navegação entre as páginas de "Outros Serviços"
+   ========================================================================== */
+.subnav-servicos {
+  position: sticky;
+  top: var(--altura-topo);
+  z-index: 45;
+  background: var(--bege);
+  border-bottom: 1px solid rgba(139, 111, 90, 0.25);
+}
+
+.subnav-servicos__container {
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+  padding: 0 32px;
+  justify-content: center;
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.subnav-servicos__container::-webkit-scrollbar {
+  display: none;
+}
+
+.subnav-servicos a {
+  display: inline-block;
+  padding: 14px 2px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--marrom-claro);
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: color var(--transicao), border-color var(--transicao);
+}
+
+.subnav-servicos a:hover {
+  color: var(--marrom-cafe);
+}
+
+.subnav-servicos a.ativo {
+  color: var(--marrom-cafe);
+  border-bottom-color: var(--marrom-claro);
+}
+
+@media (max-width: 620px) {
+  .subnav-servicos__container { gap: 20px; }
+  .subnav-servicos a { font-size: 0.82rem; }
 }
