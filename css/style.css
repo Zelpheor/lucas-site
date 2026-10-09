@@ -441,7 +441,6 @@ section[id] {
 .foto--retrato { aspect-ratio: 4 / 5; }
 .foto--paisagem { aspect-ratio: 4 / 3; }
 
-/* Como funciona o atendimento online */
 .como-funciona__grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -991,8 +990,6 @@ section[id] {
   margin: 0 -3px;
   scrollbar-width: none;
 
-  /* O carrossel é animado exclusivamente pelo JavaScript.
-     Nenhuma configuração de scroll do navegador interfere. */
   scroll-snap-type: none !important;
   scroll-behavior: auto !important;
 
@@ -1126,9 +1123,6 @@ section[id] {
   }
 }
 
-/* Respeita a preferência de acessibilidade */
-/* O carrossel mantém sua animação própria independentemente de
-   prefers-reduced-motion, configuração do navegador ou sistema. */
 .estudos__janela {
   scroll-behavior: auto !important;
   scroll-snap-type: none !important;
